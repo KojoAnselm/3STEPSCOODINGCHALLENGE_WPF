@@ -2,12 +2,8 @@
 using Membership.Model;
 using Membership.Views;
 using Prism.Commands;
-using Prism.Mvvm;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System;
-using System.Windows.Documents;
 
 namespace Membership.ViewModels
 {
@@ -167,14 +163,6 @@ namespace Membership.ViewModels
         {
             get { return _isNextEnabled; }
             set { SetProperty(ref _isNextEnabled, value); }
-        }
-
-
-
-        private bool prevEnabled = true;
-        public bool PrevEnabled {
-            get { return prevEnabled; }
-            set { SetProperty(ref prevEnabled, value); }
         }
 
         #endregion
